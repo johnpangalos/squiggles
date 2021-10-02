@@ -17,6 +17,6 @@ pid="$!"
 
 while true
 do
-  find . -name '*.go' | entr -n -r -c -d make run & wait ${!}
+  find . -name '*.go' | entr -n -r -c -d go run ./cmd/main.go & wait ${!}
 done
 
