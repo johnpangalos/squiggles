@@ -9,3 +9,7 @@ indent_size = 2
 
 [*.go]
 indent_style = tab
+
+[{makefile,**.mk}]
+# Use tabs for indentation (Makefiles require tabs)
+indent_style = tab
